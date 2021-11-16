@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    section{
+        margin:auto;
+        text-align: center;
+        width:600px;
+        background-color:sienna;
+        color:beige;
+    }
+    div {
+        margin: auto;
+        width: 500px;
+        text-align: center;
+    }
+
+
+    h1,
+    h2,
+    p {
+        text-align: center;
+    }
+    button{
+        padding: 10px;
+        margin:10px 15px;
+    }
+
+    #one{
+        background-color: orange;
+        border: orange solid 1px;
+        border-radius: 15px;
+    }
+
+    #two{
+        background-color: greenyellow;
+        border: greenyellow solid 1px;
+        border-radius: 15px;
+    }
+
+    #reset{
+        background-color: peachpuff;
+        border: peachpuff solid 1px;
+        border-radius: 15px;
+    }
+
+    
+</style>
+
+<body>
+    <section>
+        <div>
+            <h2>Score board</h2>
+            <h1><span id="scoreOne">0</span> to <span id="scoreTwo">0</span></h1>
+            <p>Use the button below to keep score</p>
+            <div>
+                <label>Playing to:</label>
+
+            <select id="target" onchange="setGoal();">
+                <option value="0">--Please choose an option--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            </div>
+            
+
+        </div>
+        <div>
+            <button id="one">+1 Player One</button>
+            <button id="two">+1 Player Two</button>
+            <button id="reset">Reset</button>
+        </div>
+    </section>
+    <!-- comment: script was added to body, if you add to a header the html page won't be loaded for them so it gives you an error -->
+    <script src="app.js"></script>
+</body>
+
+</html>
